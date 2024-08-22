@@ -1,0 +1,26 @@
+.swiper {
+    max-width: 100vw;
+    width: 100%;
+    height: auto;
+}
+.banner{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.swiper-button-prev , .swiper-button-next{
+    color: #8a8a8a;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.swiper-button-prev {
+    margin-left: 10px;
+}
+
+.swiper-button-prev:hover , .swiper-button-next:hover{
+    color: #696969;
+}

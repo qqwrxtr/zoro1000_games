@@ -1,0 +1,7 @@
+.bg_games{
+    background-image: url(./../../assets/img/bg_games.png);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.836)
+}

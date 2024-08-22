@@ -8,64 +8,41 @@ import turbomines from "./../../assets/img/turbomines.jpg";
 import limbo from "./../../assets/img/limbo.jpg";
 import keno from "./../../assets/img/keno.jpg";
 import dice from "./../../assets/img/dice.jpg";
+import princese from "./../../assets/img/princese.jpg";
+import stairs from "./../../assets/img/stairs.jpg";
+import neko from "./../../assets/img/neko.jpg";
+import mines from "./../../assets/img/mines.jpg";
+import javelinx from "./../../assets/img/javelinx.jpg";
+import turboplinko from "./../../assets/img/turboplinko.jpg";
+import tiger from "./../../assets/img/tiger.jpg";
+
+
+
+
 
 import "./GamesBlock.css";
 
 const GamesData = [
-    {
-        id: 1,
-        name: "Jet X",
-        img: jetx,
-        producer: "SmartSoft"
-    },
-    {
-        id: 2,
-        name: "Football X",
-        img: football,
-        producer: "Turbo Games"
-    },
-    {
-        id: 3,
-        name: "SpinX",
-        img: spinx,
-        producer: "SmartSoft"
-    },
-    {
-        id: 4,
-        name: "Cappadocia",
-        img: capadacia,
-        producer: "Turbo Games"
-    },
-    {
-        id: 5,
-        name: "Jet X3",
-        img: jetx3,
-        producer: "SmartSoft"
-    },
-    {
-        id: 6,
-        name: "Turbo Mines",
-        img: turbomines,
-        producer: "Turbo Games"
-    },
-    {
-        id: 7,
-        name: "Limbo Rider",
-        img: limbo,
-        producer: "Turbo Games"
-    },
-    {
-        id: 8,
-        name: "Magic Keno",
-        img: keno,
-        producer: "Turbo Games"
-    },
-    {
-        id: 9,
-        name: "Dice Twice",
-        img: dice,
-        producer: "Turbo Games"
-    }
+    { id: 1, name: "Jet X", img: jetx, producer: "SmartSoft" },
+    { id: 2, name: "Football X", img: football, producer: "Turbo Games" },
+    { id: 3, name: "SpinX", img: spinx, producer: "SmartSoft" },
+    { id: 4, name: "Cappadocia", img: capadacia, producer: "Turbo Games" },
+    { id: 5, name: "Jet X3", img: jetx3, producer: "SmartSoft" },
+    { id: 6, name: "Turbo Mines", img: turbomines, producer: "Turbo Games" },
+    { id: 7, name: "Limbo Rider", img: limbo, producer: "Turbo Games" },
+    { id: 8, name: "Magic Keno", img: keno, producer: "Turbo Games" },
+    { id: 9, name: "Dice Twice", img: dice, producer: "Turbo Games" },
+    { id: 10, name: "Save the Princess", img: princese, producer: "Turbo Games" },
+    { id: 11, name: "stairs", img: stairs, producer: "Turbo Games" },
+    { id: 12, name: "Neko", img: neko, producer: "Turbo Games" },
+    { id: 13, name: "Mines", img: mines, producer: "SmartSoft" },
+    { id: 14, name: "JavelinX", img: javelinx, producer: "SmartSoft" },
+    { id: 15, name: "Turbo Plinko", img: turboplinko, producer: "Turbo Games" },
+    { id: 16, name: "Fortune Tiger", img: tiger, producer: "Turbo Games" }
+
+
+
+
 ];
 
 const GamesBlock = () => {
@@ -77,7 +54,10 @@ const GamesBlock = () => {
                         className="content" 
                         style={{
                             backgroundImage: `url(${img})`,
-                            backgroundSize:"cover"
+                            backgroundSize:"cover",
+                            backgroundRepeat: "no-repeat",
+                            backgroundPosition: "center",
+                            width:"100% !important"
                         }}
                         aria-label={name}
                     >

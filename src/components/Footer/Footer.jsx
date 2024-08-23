@@ -11,7 +11,7 @@ const Footer = () => {
                         <p>הימורים באחריות</p>
                     </div>
                     <div className="subtitle">
-                        <p>Please play in a responsible way. Zoro1000 users must be 18 or over</p>
+                        <p>אנא לשחק בצורה אחראית. משתמשי זורו 1000 חייבים להיות בני 18 ומעלה</p>
                     </div>
                 </div>
                 </div>

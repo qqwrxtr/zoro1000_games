@@ -23,8 +23,18 @@ import aztec from "./../../assets/img/Aztec.jpg";
 import samurai from "./../../assets/img/Samurai.jpg";
 import funfruit from "./../../assets/img/FunFruit.jpg";
 import burningice from "./../../assets/img/BurningIce.jpg";
-
-
+import hunterX from "./../../assets/img/hunterX.png";
+import helicopter from "./../../assets/img/helicopter.png";
+import crashduel from "./../../assets/img/crashduel.png";
+import emirate from "./../../assets/img/emirate.jpg";
+import taboo from "./../../assets/img/er-taboo.jpg";
+import tank from "./../../assets/img/tank.jpg";
+import AusDemTal from "./../../assets/img/AusDemTal.jpg";
+import TheRiseofAi from "./../../assets/img/TheRiseofAi.jpg";
+import AlmightySpartaDice from "./../../assets/img/AlmightySpartaDice.jpg";
+import Zombies100 from "./../../assets/img/Zombies100.jpg";
+import Cupid from "./../../assets/img/cupid.jpg";
+import water from "./../../assets/img/watertiger.jpg";
 
 
 import "./GamesBlock.css";
@@ -54,21 +64,36 @@ const GamesData = [
     { id: 22, name: "Samurai", img: samurai, producer: "Turbo Games" },
     { id: 23, name: "FunFruit", img: funfruit, producer: "Turbo Games" },
     { id: 24, name: "Burning Ice", img: burningice, producer: "Turbo Games" },
+    { id: 25, name: "HunterX", img: hunterX, producer: "SmartSoft" },
+    { id: 26, name: "HelicopterX", img: helicopter, producer: "SmartSoft" },
+    { id: 27, name: "Crash Duel X", img: crashduel, producer: "SmartSoft" },
+    { id: 28, name: "The Emirate", img: emirate, producer: "SmartSoft" },
+    { id: 29, name: "Taboo", img: taboo, producer: "SmartSoft" },
+    { id: 30, name: "Cash Tank", img: tank, producer: "Turbo Games" },
+    { id: 31, name: "Aus Dem Tal", img: AusDemTal, producer: "Endorphina" },
+    { id: 32, name: "The Rise of Ai", img: TheRiseofAi, producer: "Endorphina" },
+    { id: 33, name: "Almighty Sparta Dice", img: AlmightySpartaDice, producer: "Endorphina" },
+    { id: 34, name: "Zombies 100", img: Zombies100 , producer: "Endorphina" },
+    { id: 35, name: "Cupid", img: Cupid , producer: "Endorphina" },
+    { id: 35, name: "Water Tiger", img: water , producer: "Endorphina" },
+
 ];
 
-const GamesBlock = () => {
+const GamesBlock = ({ show }) => {
+    const gamesToShow = show === 1 ? GamesData : GamesData.slice(0, 18);
+
     return (
         <>
-            {GamesData.map(({ id, name, img, producer }) => (
+            {gamesToShow.map(({ id, name, img, producer }) => (
                 <div className="block" key={id}>
-                    <div 
-                        className="content" 
+                    <div
+                        className="content"
                         style={{
                             backgroundImage: `url(${img})`,
-                            backgroundSize:"cover",
+                            backgroundSize: "cover",
                             backgroundRepeat: "no-repeat",
                             backgroundPosition: "center",
-                            width:"100% !important"
+                            width: "100% !important",
                         }}
                         aria-label={name}
                     >
@@ -77,7 +102,7 @@ const GamesBlock = () => {
                                 <p>{producer}</p>
                             </div>
                             <div className="d-flex align-items-center gap-2 hovereffect">
-                                <a href="#!" className='d-flex gap-3 m-0 p-0 prostosus'>
+                                <a href="#!" className="d-flex gap-3 m-0 p-0 prostosus">
                                     <div className="play_now">
                                         <p>שחק על אמת</p>
                                     </div>

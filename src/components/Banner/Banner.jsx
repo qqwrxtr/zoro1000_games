@@ -6,7 +6,7 @@ import './banner.css';
 import slider1 from "./../../assets/img/slider1.png";
 import slider2 from "./../../assets/img/slider2.png";
 import slider3 from "./../../assets/img/slider3.png";
-import slider4 from "./../../assets/img/slider4.jpg";
+import slider4 from "./../../assets/img/slider4.png";
 
 const Banner = () => {
     useEffect(() => {
@@ -42,6 +42,9 @@ const Banner = () => {
                         </div>
                         <div className="swiper-slide">
                             <img src={slider2} alt="slider2" className='img-fluid'/>
+                        </div>
+                        <div className="swiper-slide">
+                            <img src={slider4} alt="slider2" className='img-fluid'/>
                         </div>
                     </div>
 

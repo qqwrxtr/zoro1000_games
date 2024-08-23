@@ -12,10 +12,10 @@
     background: 
         linear-gradient(
             rgba(0, 0, 0, 0.842),
-            rgba(0, 0, 0, 0.473)
+            rgba(0, 0, 0, 0.541)
         );
-    border-radius: 20px;
-    box-shadow: 0 -50px 60px 40px rgba(0, 0, 0, 0.75);
+    border-top: 20px;
+    box-shadow: 0 -50px 60px 40px rgba(0, 0, 0, 0.808);
     overflow: hidden;
 }
 
@@ -42,4 +42,15 @@
     -moz-transform: scale(1.05);
     -ms-transform: scale(1.05);
     -o-transform: scale(1.05);
+}
+
+.row_games{
+    row-gap: 65px;
+    column-gap: 5px;
+}
+
+@media only screen and (max-width:565px) {
+    .row_games{
+        row-gap: 90px;
+    }
 }

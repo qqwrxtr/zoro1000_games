@@ -4,7 +4,7 @@ import "./GamesLay.css"
 const Games = () => {
     return ( 
         <div className="container pt-5 bg_games">
-            <div className="row d-flex mx-5 justify-content-center" style={{rowGap:"65px",columnGap:"5px"}}>
+            <div className="row d-flex mx-lg-5 mx-sm-0 justify-content-center row_games">
                 <GamesBlock/>
             </div>
             <div className="row d-flex justify-content-center dada">

@@ -1,6 +1,6 @@
 .footer-container{
     background-color: var(--maincolor2);
-    position: absolute;
+    position: relative;
     z-index: 222;
     color: white;
     height: 200px;
@@ -9,4 +9,20 @@
 
 .logo img{
     height: 70px;
+}
+
+@media only screen and (max-width: 967px) {
+    .footer-container{
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 705px) {
+    .joric{
+        display: flex;
+        flex-direction: column-reverse !important;
+    }
+    .col-5{
+        width: 100%;
+    }
 }

@@ -6,7 +6,7 @@ import Footer from './components/Footer/Footer.jsx';
 
 function App() {
   return (
-    <>
+    <div className='f-dflex flex-column justify-content-center align-items-center'>
       <header>
         <Navbar/>
       </header>
@@ -17,7 +17,7 @@ function App() {
       <footer>
         <Footer/>
       </footer>
-    </>
+    </div>
   );
 }
 

@@ -6,6 +6,18 @@
 .banner{
     margin: 0 !important;
     padding: 0 !important;
+
+}
+
+.title_container{
+    background-color: #1d1d1d;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.title_container h2{
+    font-size: 55px;
 }
 
 .swiper-slide{
@@ -28,4 +40,22 @@
 
 .swiper-button-prev:hover , .swiper-button-next:hover{
     color: #696969;
+}
+
+@media only screen and (max-width:1200px) {
+    .title_container h2{
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-width:670px) {
+    .title_container h2{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .title_container h2{
+        font-size: 35px;
+    }
 }

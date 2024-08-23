@@ -75,7 +75,7 @@ const GamesData = [
     { id: 33, name: "Almighty Sparta Dice", img: AlmightySpartaDice, producer: "Endorphina" },
     { id: 34, name: "Zombies 100", img: Zombies100 , producer: "Endorphina" },
     { id: 35, name: "Cupid", img: Cupid , producer: "Endorphina" },
-    { id: 35, name: "Water Tiger", img: water , producer: "Endorphina" },
+    { id: 36, name: "Water Tiger", img: water , producer: "Endorphina" },
 
 ];
 

@@ -49,6 +49,12 @@
     column-gap: 5px;
 }
 
+@media only screen and (min-width: 1489px) and (max-width: 1765px) {
+    .row_games{
+        padding: 0 140px !important;
+    }
+}
+
 @media only screen and (max-width:565px) {
     .row_games{
         row-gap: 90px;

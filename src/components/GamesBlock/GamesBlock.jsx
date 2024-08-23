@@ -15,7 +15,14 @@ import mines from "./../../assets/img/mines.jpg";
 import javelinx from "./../../assets/img/javelinx.jpg";
 import turboplinko from "./../../assets/img/turboplinko.jpg";
 import tiger from "./../../assets/img/tiger.jpg";
-
+import warewoolf from "./../../assets/img/warewoolf.jpg";
+import tsar from "./../../assets/img/tsar.jpg";
+import forge from "./../../assets/img/forge.png";
+import cowboy from "./../../assets/img/Cowboy.jpg";
+import aztec from "./../../assets/img/Aztec.jpg";
+import samurai from "./../../assets/img/Samurai.jpg";
+import funfruit from "./../../assets/img/FunFruit.jpg";
+import burningice from "./../../assets/img/BurningIce.jpg";
 
 
 
@@ -38,11 +45,15 @@ const GamesData = [
     { id: 13, name: "Mines", img: mines, producer: "SmartSoft" },
     { id: 14, name: "JavelinX", img: javelinx, producer: "SmartSoft" },
     { id: 15, name: "Turbo Plinko", img: turboplinko, producer: "Turbo Games" },
-    { id: 16, name: "Fortune Tiger", img: tiger, producer: "Turbo Games" }
-
-
-
-
+    { id: 16, name: "Fortune Tiger", img: tiger, producer: "Turbo Games" },
+    { id: 17, name: "Werewolf's Hunt", img: warewoolf, producer: "Turbo Games" },
+    { id: 18, name: "Tsar Treasures", img: tsar, producer: "SmartSoft" },
+    { id: 19, name: "Forge of Wealth", img: forge, producer: "SmartSoft" },
+    { id: 20, name: "Cowboy", img: cowboy, producer: "Turbo Games" },
+    { id: 21, name: "Aztec", img: aztec, producer: "Turbo Games" },
+    { id: 22, name: "Samurai", img: samurai, producer: "Turbo Games" },
+    { id: 23, name: "FunFruit", img: funfruit, producer: "Turbo Games" },
+    { id: 24, name: "Burning Ice", img: burningice, producer: "Turbo Games" },
 ];
 
 const GamesBlock = () => {

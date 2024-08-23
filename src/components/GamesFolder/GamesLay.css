@@ -1,7 +1,45 @@
-.bg_games{
+.bg_games {
     background-image: url(./../../assets/img/bg_games.png);
     background-size: cover;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.836)
+    background-color: rgba(0, 0, 0, 0.836);
+}
+.dada {
+    position: relative;
+    text-align: center;
+    padding-bottom: 40px;
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.842),
+            rgba(0, 0, 0, 0.473)
+        );
+    border-radius: 20px;
+    box-shadow: 0 -50px 60px 40px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+}
+
+.shadow_down_load_more button {
+    background-color: var(--maincolor);
+    color: white;
+    text-align: center;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    margin-top: 70px;
+}
+
+.shadow_down_load_more button:hover {
+    background-color: var(--maincolor);
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
 }

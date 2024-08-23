@@ -27,10 +27,10 @@ const Banner = () => {
             <div className="swiper">
                 <div className="swiper-wrapper">
                     <div className="swiper-slide">
-                        <img src={slider1} alt="slider1" />
+                        <img src={slider1} alt="slider1" className='img-fluid'/>
                     </div>
                     <div className="swiper-slide">
-                        <img src={slider2} alt="slider2" />
+                        <img src={slider2} alt="slider2" className='img-fluid'/>
                     </div>
                 </div>
 

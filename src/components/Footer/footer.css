@@ -1,0 +1,12 @@
+.footer-container{
+    background-color: var(--maincolor2);
+    position: absolute;
+    z-index: 222;
+    color: white;
+    height: 200px;
+    padding: 0 150px;
+}
+
+.logo img{
+    height: 70px;
+}

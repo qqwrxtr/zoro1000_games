@@ -23,7 +23,6 @@
 .swiper-slide{
     display: flex;
     justify-content: center;
-    height: 440px;
 }
 
 .swiper-button-prev , .swiper-button-next{
@@ -49,7 +48,26 @@
     }
 }
 
+@media only screen and (max-width:992px) {
+    .swiper-slide img{
+        border-radius: 24px;
+    }
+    .swiper-backface-hidden .swiper-slide{
+        background-color: #1d1d1d;
+        padding-bottom: 40px;
+    }
+    .swiper-button-prev , .swiper-button-next{
+        display: none !important;
+    }
+}
+
 @media only screen and (max-width:670px) {
+    .swiper-slide{
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width:470px) {
     .title_container h2{
         font-size: 40px;
     }

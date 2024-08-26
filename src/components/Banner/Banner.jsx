@@ -56,7 +56,6 @@ const Banner = () => {
                             <img src={slider4} alt="slider2" className='img-fluid'/>
                         </div>
                     </div>
-
                     <div className="swiper-button-prev"></div>
                     <div className="swiper-button-next"></div>
                 </div>
@@ -75,9 +74,6 @@ const Banner = () => {
                             <img src={mdslide5} alt="slider2" className='img-fluid'/>
                         </div>
                     </div>
-
-                    <div className="swiper-button-prev"></div>
-                    <div className="swiper-button-next"></div>
                 </div>
                 <div className="swiper d-sm-block d-md-none">
                     <div className="swiper-wrapper">
@@ -94,9 +90,6 @@ const Banner = () => {
                             <img src={smslide5} alt="slider2" className='img-fluid'/>
                         </div>
                     </div>
-
-                    <div className="swiper-button-prev"></div>
-                    <div className="swiper-button-next"></div>
                 </div>
             </div>
         </>

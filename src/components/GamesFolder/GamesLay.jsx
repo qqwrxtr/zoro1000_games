@@ -1,12 +1,21 @@
 import React, { useState } from "react";
-import GamesBlock from "../GamesBlock/GamesBlock";
+import GamesBlock from "./GamesBlock/GamesBlock.jsx";
+import ZoroForm from "./../ZoroForm/ZoroForm.jsx";
 import "./GamesLay.css";
 
 const Games = () => {
   const [clickCount, setClickCount] = useState(0);
+  const [isFormVisible, setIsFormVisible] = useState(false); 
 
   const handleLoadMoreClick = () => {
     setClickCount((prevCount) => prevCount + 1);
+    if (clickCount >= 1) {
+      setIsFormVisible(true);
+    }
+  };
+
+  const handleCloseForm = () => {
+    setIsFormVisible(false);
   };
 
   return (
@@ -18,11 +27,13 @@ const Games = () => {
         <div className="col-12 d-flex justify-content-center">
           <div className="shadow_down_load_more">
             <button className="btn" onClick={handleLoadMoreClick}>
-                טען יותר    
+              טען יותר
             </button>
           </div>
         </div>
       </div>
+
+      {isFormVisible && <ZoroForm onClose={handleCloseForm} />}
     </div>
   );
 };

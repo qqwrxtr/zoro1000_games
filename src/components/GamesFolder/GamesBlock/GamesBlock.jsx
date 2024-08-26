@@ -1,40 +1,41 @@
-import React from 'react';
-import jetx from "./../../assets/img/JetX.jpg";
-import football from "./../../assets/img/FootballX.jpg";
-import spinx from "./../../assets/img/SpinX.jpg";
-import capadacia from "./../../assets/img/Cappadocia.jpg";
-import jetx3 from "./../../assets/img/JetX3.jpg";
-import turbomines from "./../../assets/img/turbomines.jpg";
-import limbo from "./../../assets/img/limbo.jpg";
-import keno from "./../../assets/img/keno.jpg";
-import dice from "./../../assets/img/dice.jpg";
-import princese from "./../../assets/img/princese.jpg";
-import stairs from "./../../assets/img/stairs.jpg";
-import neko from "./../../assets/img/neko.jpg";
-import mines from "./../../assets/img/mines.jpg";
-import javelinx from "./../../assets/img/javelinx.jpg";
-import turboplinko from "./../../assets/img/turboplinko.jpg";
-import tiger from "./../../assets/img/tiger.jpg";
-import warewoolf from "./../../assets/img/warewoolf.jpg";
-import tsar from "./../../assets/img/tsar.jpg";
-import forge from "./../../assets/img/forge.png";
-import cowboy from "./../../assets/img/Cowboy.jpg";
-import aztec from "./../../assets/img/Aztec.jpg";
-import samurai from "./../../assets/img/Samurai.jpg";
-import funfruit from "./../../assets/img/FunFruit.jpg";
-import burningice from "./../../assets/img/BurningIce.jpg";
-import hunterX from "./../../assets/img/hunterX.png";
-import helicopter from "./../../assets/img/helicopter.png";
-import crashduel from "./../../assets/img/crashduel.png";
-import emirate from "./../../assets/img/emirate.jpg";
-import taboo from "./../../assets/img/er-taboo.jpg";
-import tank from "./../../assets/img/tank.jpg";
-import AusDemTal from "./../../assets/img/AusDemTal.jpg";
-import TheRiseofAi from "./../../assets/img/TheRiseofAi.jpg";
-import AlmightySpartaDice from "./../../assets/img/AlmightySpartaDice.jpg";
-import Zombies100 from "./../../assets/img/Zombies100.jpg";
-import Cupid from "./../../assets/img/cupid.jpg";
-import water from "./../../assets/img/watertiger.jpg";
+import React, { useState } from 'react';
+import ZoroForm from "./../../ZoroForm/ZoroForm.jsx";
+import jetx from "./../../../assets/img/JetX.jpg";
+import football from "./../../../assets/img/FootballX.jpg";
+import spinx from "./../../../assets/img/SpinX.jpg";
+import capadacia from "./../../../assets/img/Cappadocia.jpg";
+import jetx3 from "./../../../assets/img/JetX3.jpg";
+import turbomines from "./../../../assets/img/turbomines.jpg";
+import limbo from "./../../../assets/img/limbo.jpg";
+import keno from "./../../../assets/img/keno.jpg";
+import dice from "./../../../assets/img/dice.jpg";
+import princese from "./../../../assets/img/princese.jpg";
+import stairs from "./../../../assets/img/stairs.jpg";
+import neko from "./../../../assets/img/neko.jpg";
+import mines from "./../../../assets/img/mines.jpg";
+import javelinx from "./../../../assets/img/javelinx.jpg";
+import turboplinko from "./../../../assets/img/turboplinko.jpg";
+import tiger from "./../../../assets/img/tiger.jpg";
+import warewoolf from "./../../../assets/img/warewoolf.jpg";
+import tsar from "./../../../assets/img/tsar.jpg";
+import forge from "./../../../assets/img/forge.png";
+import cowboy from "./../../../assets/img/Cowboy.jpg";
+import aztec from "./../../../assets/img/Aztec.jpg";
+import samurai from "./../../../assets/img/Samurai.jpg";
+import funfruit from "./../../../assets/img/FunFruit.jpg";
+import burningice from "./../../../assets/img/BurningIce.jpg";
+import hunterX from "./../../../assets/img/hunterX.png";
+import helicopter from "./../../../assets/img/helicopter.png";
+import crashduel from "./../../../assets/img/crashduel.png";
+import emirate from "./../../../assets/img/emirate.jpg";
+import taboo from "./../../../assets/img/er-taboo.jpg";
+import tank from "./../../../assets/img/tank.jpg";
+import AusDemTal from "./../../../assets/img/AusDemTal.jpg";
+import TheRiseofAi from "./../../../assets/img/TheRiseofAi.jpg";
+import AlmightySpartaDice from "./../../../assets/img/AlmightySpartaDice.jpg";
+import Zombies100 from "./../../../assets/img/Zombies100.jpg";
+import Cupid from "./../../../assets/img/cupid.jpg";
+import water from "./../../../assets/img/watertiger.jpg";
 
 
 import "./GamesBlock.css";
@@ -81,6 +82,15 @@ const GamesData = [
 
 const GamesBlock = ({ show }) => {
     const gamesToShow = show === 1 ? GamesData : GamesData.slice(0, 18);
+    const [isFormVisible, setIsFormVisible] = useState(false);
+
+    const handleFormOpen = () => {
+        setIsFormVisible(true);
+    };
+
+    const handleFormClose = () => {
+        setIsFormVisible(false);
+    };
 
     return (
         <>
@@ -102,7 +112,7 @@ const GamesBlock = ({ show }) => {
                                 <p>{producer}</p>
                             </div>
                             <div className="d-flex align-items-center gap-2 hovereffect">
-                                <a href="#!" className="d-flex gap-3 m-0 p-0 prostosus">
+                                <a href="#!" className="d-flex gap-3 m-0 p-0 prostosus" onClick={() => handleFormOpen({ name, producer })}>
                                     <div className="play_now">
                                         <p>שחק על אמת</p>
                                     </div>
@@ -118,6 +128,8 @@ const GamesBlock = ({ show }) => {
                     </div>
                 </div>
             ))}
+        
+        {isFormVisible && <ZoroForm onClose={handleFormClose}/>}
         </>
     );
 };

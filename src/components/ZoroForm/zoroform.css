@@ -85,8 +85,8 @@
 .checkbox-group input[type="radio"]:checked + label::after {
     content: '✓';
     position: absolute;
-    left: 4px;
-    top: -2px;
+    left: 3px;
+    top: 1.2px;
     font-size: 18px;
     color: #fff;
 }

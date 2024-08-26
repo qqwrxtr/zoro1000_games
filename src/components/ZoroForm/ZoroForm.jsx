@@ -132,6 +132,7 @@ const ZoroForm = ({ onClose }) => {
               פתיחת חשבון מהיר
             </button>
           </div>
+          <div className="mb-3"></div>
         </div>
       </form>
     </div>

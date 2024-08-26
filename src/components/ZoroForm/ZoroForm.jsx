@@ -114,6 +114,7 @@ const ZoroForm = ({ onClose }) => {
                   id="q2-no"
                   name="question2"
                   defaultValue="No"
+                  className="mt-2"
                 ></input>
                 <label htmlFor="q2-no">לא</label>
               </div>

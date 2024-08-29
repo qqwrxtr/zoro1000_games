@@ -51,7 +51,7 @@ const GamesData = [
     { id: 8, name: "Magic Keno", img: keno, producer: "Turbo Games" },
     { id: 9, name: "Dice Twice", img: dice, producer: "Turbo Games" },
     { id: 10, name: "Save the Princess", img: princese, producer: "Turbo Games" },
-    { id: 11, name: "stairs", img: stairs, producer: "Turbo Games" },
+    { id: 11, name: "Stairs", img: stairs, producer: "Turbo Games" },
     { id: 12, name: "Neko", img: neko, producer: "Turbo Games" },
     { id: 13, name: "Mines", img: mines, producer: "SmartSoft" },
     { id: 14, name: "JavelinX", img: javelinx, producer: "SmartSoft" },
@@ -112,7 +112,7 @@ const GamesBlock = ({ show }) => {
                                 <p>{producer}</p>
                             </div>
                             <div className="d-flex align-items-center gap-2 hovereffect">
-                                <a href="#!" className="d-flex gap-3 m-0 p-0 prostosus" onClick={() => handleFormOpen({ name, producer })}>
+                                <a href="#!" className="d-flex gap-3 m-0 p-0 prostosus" onClick={() => handleFormOpen()}>
                                     <div className="play_now">
                                         <p>שחק על אמת</p>
                                     </div>

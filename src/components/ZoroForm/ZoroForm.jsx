@@ -32,7 +32,7 @@ const ZoroForm = ({ onClose }) => {
                 pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]+"
                 placeholder="חובה"
                 className="form-control"
-                required=""
+                required
               ></input>
             </div>
             <div className="email text-end topmarg form-group mt-3">
@@ -41,11 +41,12 @@ const ZoroForm = ({ onClose }) => {
               </label>
               <input
                 type="email"
-                required=""
+                required
                 name="email"
                 id="email"
                 placeholder="לא חובה"
                 className="form-control"
+                
               ></input>
             </div>
             <div className="form-group text-end mt-3">
@@ -60,7 +61,7 @@ const ZoroForm = ({ onClose }) => {
                   id="phone"
                   placeholder="חובה "
                   className="form-control"
-                  required=""
+                  required
                 ></input>
               </div>
             </div>

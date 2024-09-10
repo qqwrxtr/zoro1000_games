@@ -27,7 +27,7 @@ const Games = () => {
         <div className="col-12 d-flex justify-content-center">
           <div className="shadow_down_load_more">
             <button className="btn" onClick={handleLoadMoreClick}>
-              טען יותר
+                משחקים נוספים   
             </button>
           </div>
         </div>

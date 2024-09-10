@@ -15,7 +15,7 @@ const Navbar = () => {
     };
 
     return ( 
-        <div className="container navbar">
+        <div className="container navbar d-flex flex-row-reverse">
             <div className="buttons">
                 <div className="register">
                     <a href="#!" onClick={handleFormOpen}>

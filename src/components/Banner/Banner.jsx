@@ -37,7 +37,7 @@ const Banner = () => {
         <>
             <div className="container title_container">
                 <div className="row" >
-                    <h2>חריצי קזינו</h2>
+                    <h2>משחקי מזל</h2>
                 </div>
             </div>
             <div className="container banner">
